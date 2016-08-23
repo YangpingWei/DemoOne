@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33D0B0EA1D6C22AA00FDDF19 /* TSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D0B0E91D6C22AA00FDDF19 /* TSButton.m */; };
 		33DC399C1D6AE3D100437368 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DC399B1D6AE3D100437368 /* main.m */; };
 		33DC399F1D6AE3D100437368 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DC399E1D6AE3D100437368 /* AppDelegate.m */; };
 		33DC39A21D6AE3D100437368 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DC39A11D6AE3D100437368 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33D0B0E81D6C22AA00FDDF19 /* TSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSButton.h; sourceTree = "<group>"; };
+		33D0B0E91D6C22AA00FDDF19 /* TSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSButton.m; sourceTree = "<group>"; };
 		33DC39971D6AE3D100437368 /* UIPO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DC399B1D6AE3D100437368 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33DC399D1D6AE3D100437368 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				33DC399E1D6AE3D100437368 /* AppDelegate.m */,
 				33DC39A01D6AE3D100437368 /* ViewController.h */,
 				33DC39A11D6AE3D100437368 /* ViewController.m */,
+				33D0B0E81D6C22AA00FDDF19 /* TSButton.h */,
+				33D0B0E91D6C22AA00FDDF19 /* TSButton.m */,
 				33DC39A31D6AE3D100437368 /* Main.storyboard */,
 				33DC39A61D6AE3D100437368 /* Assets.xcassets */,
 				33DC39A81D6AE3D100437368 /* LaunchScreen.storyboard */,
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D0B0EA1D6C22AA00FDDF19 /* TSButton.m in Sources */,
 				33DC39A21D6AE3D100437368 /* ViewController.m in Sources */,
 				33DC399F1D6AE3D100437368 /* AppDelegate.m in Sources */,
 				33DC399C1D6AE3D100437368 /* main.m in Sources */,
@@ -496,6 +502,7 @@
 				33DC39C61D6AE3D100437368 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33DC39C71D6AE3D100437368 /* Build configuration list for PBXNativeTarget "UIPOTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				33DC39C91D6AE3D100437368 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33DC39CA1D6AE3D100437368 /* Build configuration list for PBXNativeTarget "UIPOUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				33DC39CC1D6AE3D100437368 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

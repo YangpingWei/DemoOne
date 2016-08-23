@@ -12,11 +12,25 @@
 
 @end
 
+typedef void(^SumBlock) (int a,int b);
+
 @implementation ViewController
+
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self sum_Block:^(int a, int b) {
+        NSLog(@"a+b =%d",a+b);
+    }];
+}
+-(void)sum_Block:(SumBlock)sumBlock{
+    sumBlock(990,330);
+    
 }
 
 - (void)didReceiveMemoryWarning {
