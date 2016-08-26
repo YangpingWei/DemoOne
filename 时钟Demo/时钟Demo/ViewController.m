@@ -59,8 +59,7 @@
     _bgLayer.bounds = CGRectMake(0, 0, 300, 300);
     _bgLayer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"dial"].CGImage);
     _bgLayer.position = self.view.center;
-    
-    
+
     
     [self.view.layer addSublayer:self.bgLayer];
 
