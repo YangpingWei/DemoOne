@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgK-2O-Hfk">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="飞机" translatesAutoresizingMaskIntoConstraints="NO" id="ScG-MC-nJc">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="62" id="Kxn-4d-R4n"/>
+                                            <constraint firstAttribute="height" constant="47" id="fnI-md-S4M"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Kxn-4d-R4n"/>
+                                                <exclude reference="fnI-md-S4M"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Kxn-4d-R4n"/>
+                                                <include reference="fnI-md-S4M"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.015131786616161658" green="0.015131786616161658" blue="0.015131786616161658" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ScG-MC-nJc" firstAttribute="leading" secondItem="OgK-2O-Hfk" secondAttribute="leading" id="X4F-Kh-T8K"/>
+                                    <constraint firstAttribute="bottom" secondItem="ScG-MC-nJc" secondAttribute="bottom" id="ahA-YZ-2rw"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="ScG-MC-nJc"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="X4F-Kh-T8K"/>
+                                        <exclude reference="ahA-YZ-2rw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="ScG-MC-nJc"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="X4F-Kh-T8K"/>
+                                        <include reference="ahA-YZ-2rw"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OgK-2O-Hfk" secondAttribute="trailing" id="P8z-KP-f9h"/>
+                            <constraint firstItem="OgK-2O-Hfk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fje-zY-nZW"/>
+                            <constraint firstItem="OgK-2O-Hfk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gpH-B3-2sy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OgK-2O-Hfk" secondAttribute="bottom" id="hY6-jb-pwK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="OgK-2O-Hfk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="P8z-KP-f9h"/>
+                                <exclude reference="fje-zY-nZW"/>
+                                <exclude reference="gpH-B3-2sy"/>
+                                <exclude reference="hY6-jb-pwK"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="OgK-2O-Hfk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="P8z-KP-f9h"/>
+                                <include reference="fje-zY-nZW"/>
+                                <include reference="gpH-B3-2sy"/>
+                                <include reference="hY6-jb-pwK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="aniImageView" destination="ScG-MC-nJc" id="Ki0-cZ-3RS"/>
+                        <outlet property="bgView" destination="OgK-2O-Hfk" id="7q0-LI-DtM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="309"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="飞机" width="202" height="195"/>
+    </resources>
+</document>
