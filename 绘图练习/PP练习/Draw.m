@@ -136,21 +136,7 @@
     
 }
 
--(void)download{
-    
-    
-    
-    if () {
-        <#statements#>
-    }
-    UIBezierPath *arc = [UIBezierPath bezierPathWithArcCenter:CGPointMake(250, 450)  radius:50 startAngle:0 endAngle:M_PI/2*2 clockwise:YES];
-    [arc addLineToPoint:CGPointMake(250, 450)];
-    [arc closePath];
-    [[UIColor greenColor] setFill];
-    [arc fill];
-    
-    
-}
+
 
 
 @end
